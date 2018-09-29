@@ -1,0 +1,258 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+.caja_agregar_opciones{
+    position: relative;
+}
+
+.caja_agregar_opciones .selectr-container.selectr-desktop.has-selected {
+    width: 35% !important;
+    display: inline-block;
+}
+
+.caja_agregar_opciones > input[type="button"] {
+    -moz-box-shadow: 0px 10px 14px -7px #276873;
+    -webkit-box-shadow: 0px 10px 14px -7px #276873;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FFC107 ), color-stop(1, #FF9800 ));
+    background:-moz-linear-gradient(top, #FFC107  5%, #FF9800  100%);
+    background:-webkit-linear-gradient(top, #FFC107  5%, #FF9800  100%);
+    background:-o-linear-gradient(top, #FFC107  5%, #FF9800  100%);
+    background:-ms-linear-gradient(top, #FFC107  5%, #FF9800  100%);
+    background:linear-gradient(to bottom, #FFC107  5%, #FF9800  100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFC107 ', endColorstr='#FF9800 ',GradientType=0);
+    background-color:#FFC107 ;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    display:block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:17px;
+    font-weight:bold;
+    padding:9px 20px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    margin-top: 1.5%;
+}
+
+.caja_agregar_opciones > input[type="button"]:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FF9800 ), color-stop(1, #FFC107 ));
+    background:-moz-linear-gradient(top, #FF9800  5%, #FFC107  100%);
+    background:-webkit-linear-gradient(top, #FF9800  5%, #FFC107  100%);
+    background:-o-linear-gradient(top, #FF9800  5%, #FFC107  100%);
+    background:-ms-linear-gradient(top, #FF9800  5%, #FFC107  100%);
+    background:linear-gradient(to bottom, #FF9800  5%, #FFC107  100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9800 ', endColorstr='#FFC107 ',GradientType=0);
+    background-color:#FF9800 ;
+}
+
+.caja_agregar_opciones > input[type="button"]:active {
+    position:relative;
+    top:1px;
+}
+
+div.loading_redirect_overlay {
+    border-radius: 5px;
+    background: #00000080;
+    height: 95.2%;
+    width: 83%;
+    padding: 9px;
+    position: absolute;
+    z-index: 9999999;
+    top: -5px;
+    text-align: center;
+    display: block;
+    cursor: wait;
+    left: -10px;
+}
+
+div.table_loading_overlay{
+    border-radius: 5px;
+    background: #00000080;
+    height: 95.2%;
+    width: 100%;
+    padding: 9px;
+    position: absolute;
+    z-index: 9999999;
+    top: -5px;
+    text-align: center;
+    display: block;
+    cursor: wait;
+    left: -10px;
+}
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+.lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 6px;
+    box-sizing: border-box;
+    border: 26px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+.tabla_paginas_redirecciones {
+    position: relative;
+    margin: 2% 5% 0% 0%;
+    box-shadow: 0px 0px 80px -20px #000;
+}
+
+.tabla_paginas_redirecciones .divTable{
+    display: table;
+    width: 100%;
+}
+.tabla_paginas_redirecciones .divTableRow {
+    display: table-row;
+}
+
+.tabla_paginas_redirecciones .divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+}
+
+.tabla_paginas_redirecciones .divTableCell, .divTableHead {
+    border: 1px solid #ffab03;
+    width: 10%;
+    vertical-align: middle; 
+    display: table-cell;
+    padding: 3px 10px;
+}
+
+.tabla_paginas_redirecciones .divTableHead {
+    font-weight: 700;
+    background: #ffab03;
+    border: 1px solid 9c9c9c;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    line-height: 1.1;
+}
+
+.tabla_paginas_redirecciones .divTableBody {
+    text-align: center;
+}
+
+.tabla_paginas_redirecciones .divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+    font-weight: bold;
+}
+
+.tabla_paginas_redirecciones .divTableFoot {
+    background-color: #EEE;
+    display: table-footer-group;
+    font-weight: bold;
+}
+
+.tabla_paginas_redirecciones .divTableBody {
+    display: table-row-group;
+}
+
+.remove_redireccion {
+        outline: none !important;
+	-moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
+	-webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
+	box-shadow:inset 0px 39px 0px -24px #e67a73;
+	background-color:#e4685d;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.remove_redireccion:hover {
+	background-color:#eb675e;
+}
+.remove_redireccion:active {
+	position:relative;
+	top:1px;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
